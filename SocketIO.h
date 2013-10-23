@@ -110,6 +110,7 @@ typedef enum {
 - (void) connectToHost:(NSString *)host onPort:(NSInteger)port withParams:(NSDictionary *)params withNamespace:(NSString *)endpoint withConnectionTimeout: (NSTimeInterval) connectionTimeout;
 
 - (void) disconnect;
+- (void) disconnectSync;
 
 - (void) sendMessage:(NSString *)data;
 - (void) sendMessage:(NSString *)data withAcknowledge:(SocketIOCallback)function;
